@@ -23,11 +23,11 @@ public class Test extends JPanel {
     private Image combiningImages() throws IOException {
 //        BufferedImage bufferedImage = new BufferedImage(200,200,BufferedImage.TYPE_INT_RGB);
 
-        File path = new File("./images/");
+        File path = new File("/images/");
 
         // load source images
-        BufferedImage image = ImageIO.read(new File(path, "image.png"));
-        BufferedImage overlay = ImageIO.read(new File(path, "overlay.png"));
+        BufferedImage image = ImageIO.read(new File(path, "image.jpg"));
+        BufferedImage overlay = ImageIO.read(new File(path, "overlay.jpg"));
 
 // create the new image, canvas size is the max. of both image sizes
         int w = Math.max(image.getWidth(), overlay.getWidth());
